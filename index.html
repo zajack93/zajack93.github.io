@@ -1,49 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<title>Document</title>
 </head>
 <body>
-    
+
     <form action="https://formspree.io/zajack93@gmail.com" method="POST">
      
-      <label for="imię"> Imię: </label><br /> 
-      <input type="text" id ="imię" name="imie" /><br /> 
-      <label for="nazwisko"> Nazwisko: </label><br /> 
-      <input type="text" id="nazwisko" name="nazwisko" /> <br />
-       <label for="telefen"> Nr telefonu: </label><br /> 
-      <input type="tel" id="telefon" name="tel"><br />
-<!--     !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! id dotyczy for, for = id-->
-<!--    
-      <label for="email"> email: </label>
-      <input type="text" name="email"> <br />
-   -->
-     <label for="wiadomosc"> Wiadomość: </label><br /> 
-      <textarea name="wiadomosc" id="wiadomosc" cols="30" rows="10" >  
-               
-        </textarea> <br />
-        <select name="miasto" id="miasto"> <br />
-            <option value="krakow"> Kraków </option> 
-            <option value="warszawa"> Warszawa </option> 
-            <option value="gdansk"> Gdańsk </option>
-            
-<!--            lala-->
-        </select>
-        <br />
-        <lablel for ="zgoda"> zgoda na przetwarzanie danych osobowych</lablel> <br />
-        <input type="chechbox" id="zgoda"> <br />
 
-        
-        <input type="radio" id="kobieta"> 
-        <lablel for ="kobieta"> kobieta </lablel>  <br />
-        
-        <input type="radio" id="mezczyzna"> 
-        <lablel for ="mezczyzna"> mężczyzna </lablel> <br />
-        
-       <input type="submit" value="Wyslij">
-  
-    </form>
-    
+	<label for="imie"> Imię: </label> <br />
+	<input type="text" id="imie" name = "imie"> <br />
+	<label for="nazwisko">Nazwisko:</label> <br />
+	<input type="text" id="nazwisko" name="nazwisko"> <br />
+	<label for="email">e-mail:</label> <br />
+	<input type="email" id="email" name="email"> <br />
+	
+	<label for="tel">Telefon:</label> <br />
+  	<input type="tel" id="tel" name="usrtel">
+	<br />
+	
+	
+	<label for="miasto">Wybierz swoje miasto: </label> <br /> 
+	
+	<select name="miasto" id="miasto"> 
+	<option value="krakow">Kraków</option>
+	<option value="warszawa">Warszawa</option>
+	<option value="gdansk">Gdańsk</option>
+	</select> <br />
+	<br />
+	<label > Zgoda na przetwarzanie danych osobowych: </label> <br /> 
+	<input type="checkbox" name="yes" value="yes">Wyrażam zgodę <br /><br />
+			
+	<label > Płeć: </label> <br />
+	<input type="radio" name="gender" value="kobieta" checked> Kobieta <br />
+	<input type="radio" name="gender" value="mezczyzna"> Mężczyzna <br />
+	<input type="radio" name="gender" value="inne"> Inne <br /><br />
+		
+	<label for="wiadomosc"> Wiadomość </label>	<br />
+	<textarea name="message" id="wiadomosc" rows="10" cols="30">Wpisz swoją wiadomość
+	</textarea> <br /><br />
+			
+		
+	<input type="submit" value="Prześlij">
+	
+	
+	
+	
+	
+</form>
+	
 </body>
 </html>
